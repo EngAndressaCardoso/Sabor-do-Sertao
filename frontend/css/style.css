@@ -1,8 +1,11 @@
+/* .....................VARIAVEL DE CORES..................... */
 :root{
     --cor-principal: #F5F2EB;
     --cor-secundaria: #6B3F22;
+    --hover-principal: #80583d;
 }
 
+/* .....................ESTILIZAÇÃO GERAL..................... */
 body{
     margin: 0;
     padding-top: 143px;
@@ -19,6 +22,7 @@ a{
     text-decoration: none;
 }
 
+/* .....................CABEÇALHO..................... */
 header{
     position: fixed;
     top: 0;
@@ -50,17 +54,25 @@ header ul{
 }
 
 header ul :hover{
-    background-color: #80583d;
-    border-radius: 10px;
+    background-color: var(--hover-principal);
+    border-radius: 20px;
     color: var(--cor-principal);
     padding: 5px;
 }
 
+/* .....................BANNER..................... */
 #introduction{
     padding: 20px;
-    min-height: 30vh; 
+    min-height: 40vh; 
     background: linear-gradient(#4E2B16, #C77B3A);
     color: var(--cor-principal);
+    margin-top: 20px;
+    /* background-image: url("https://pixabay.com/get/g99858af618a5ba5f942f57e96a15204a71a8f1342877b7df65a1def75f25df06aa5bc60f640fd60510c4abe06f0b91af_1920.jpg?longlived="); */
+    width: 94.5%;       /* Ocupa toda a largura disponível */
+    height: 400px;     /* Altura do bloco na tela (ajuste como quiser) */
+   background-size: cover;       /* Faz a foto cobrir todo o espaço sem distorcer */
+  background-position: center;  /* Centraliza a imagem no bloco */
+  background-repeat: no-repeat; /* Impede que a foto fique se repetindo */
 }
 
 #introduction a{
@@ -74,6 +86,28 @@ header ul :hover{
     background-color: #945a28;
 }
 
+/* .....................SEÇÃO - SOBRE..................... */
+#about{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: var(--cor-secundaria);
+}
+
+#about a{
+    color: var(--cor-secundaria);
+    padding: 5px;
+    margin: 5px;
+    font-weight: bold;
+    border: 1px solid var(--cor-secundaria);
+    border-radius: 20px;
+}
+
+#about a:hover{
+    background-color: var(--hover-principal);
+    color: var(--cor-principal);
+}
+/* .....................SEÇÃO - COMIDAS..................... */
 #our-foods{
     background-color: aqua;
     display: flex;
@@ -85,6 +119,7 @@ header ul :hover{
     flex-direction: column;
 }
 
+/* .....................SEÇÃO - CONTATOS..................... */
 #contact{
     background-color: var(--cor-secundaria);
     color: #F5F2EB;
@@ -93,17 +128,18 @@ header ul :hover{
 
 #contact a{
     border: 0.5px solid var(--cor-principal);
-    border-radius: 10px;
+    border-radius: 20px;
     color: var(--cor-principal);
     padding: 5px;
 }
 
 #contact a:hover{
     background-color: #5e351a;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 5px;
 }
 
+/* .....................RODAPÉ..................... */
 footer{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -113,9 +149,14 @@ footer{
     padding-left: 60px;
 }
 
+/* .....................RESPONSIVIDADE..................... */
 @media (min-width: 768px) {
     body{
         padding-top: 100px;
+    }
+
+    #introduction{
+        margin-top: 0;
     }
 
     header{
@@ -128,6 +169,10 @@ footer{
         grid-template-columns: repeat(4, 1fr);
         width: auto;
         padding-left: 200px;
+    }
+
+    #introduction{
+        width: 97.3%;  
     }
 
   footer{
