@@ -15,7 +15,7 @@
                 <li><a href="#about">Sobre nós</a></li>
                 <li><a href="#our-foods">Nossas comidas</a></li>
                 <li><a href="#contact">Entre em contato</a></li>
-                <li><a href="#location">Onde estamos</a></li>
+                <li><a href="#localizacao">Onde estamos</a></li>
             </ul>
         </nav>
     </header>
@@ -30,16 +30,20 @@
         </section>
 
         <section id="about">
-            <h4>SOBRE NÓS</h4>
-            <h2>Mais que um restaurante, um pedaço de Pernambuco.</h2>
-            <p>Somos um restaurante dedicado a levar o melhor da culinária pernambucana para você. Nossa missão é preservar a tradição, valorizar os sabores regionais e proporcionar uma experiência única, com pratos feitos de forma artesanal e ingredientes selecionados.</p>
+            <div class="historia">
+                <h4>SOBRE NÓS</h4>
+                <h2>Mais que um restaurante, um pedaço de Pernambuco.</h2>
+                <p>Somos um restaurante dedicado a levar o melhor da culinária pernambucana para você. Nossa missão é preservar a tradição, valorizar os sabores regionais e proporcionar uma experiência única, com pratos feitos de forma artesanal e ingredientes selecionados.</p>
 
-            <a href="#">Saiba mais sobre nós</a>
+                <a href="#">Saiba mais sobre nós</a>
+            </div>
 
-            <div>
-                <img src="assets/pernambuco.jpg" alt="Imagem de Recife" width="180" height="120">
+            <div class="imagem-principal">
+                <img src="assets/pernambuco.jpg" alt="Imagem de Recife" width="400" height="300">
             </div>
         </section>
+
+        <hr>
 
         <section id="our-foods">
             <div>
@@ -47,24 +51,24 @@
                 <h2>Sabores que contam histórias</h2>
             </div>
 
-            <div>
+            <div class="refeicoes">
                 <div class="food-card">
-                    <img src="./assets/food1.jpeg" alt="Arroz Doce" width="180" height="120">
+                    <img src="./assets/food1.jpeg" alt="Arroz Doce" width="200" height="150">
                     <h5>Arroz Doce</h5>
                     <p>Arroz doce cremoso com canela.</p>
                 </div>
                 <div class="food-card">
-                    <img src="./assets/food2.jpeg" alt="Carne seca com puré de mandioca" width="180" height="120">
+                    <img src="./assets/food2.jpeg" alt="Carne seca com puré de mandioca" width="200" height="150">
                     <h5>Carne seca com puré de mandioca</h5>
                     <p>Carne seca, puré, banana, queijo.</p>
                 </div>
                 <div class="food-card">
-                    <img src="./assets/food3.jpeg" alt="Cuscuz" width="180" height="120">
+                    <img src="./assets/food3.jpeg" alt="Cuscuz" width="200" height="150">
                     <h5>Cuscuz</h5>
                     <p>Cuscuz, carne seca e puré.</p>
                 </div>
                 <div class="food-card">
-                    <img src="./assets/food4.jpeg" alt="Bobó de camarão" width="180" height="120">
+                    <img src="./assets/food4.jpeg" alt="Bobó de camarão" width="200" height="150">
                     <h5>Bobó de camarão</h5>
                     <p>Camarão cremoso com feijão fradinho.</p>
                 </div>
@@ -72,15 +76,15 @@
         </section>
 
         <section id="contact">
-            <div>
+            <div class="duvidas">
                 <h4>ENTRE EM CONTATO</h4>
                 <h3>Será um prazer te atender</h3>
                 <p>Tire suas dúvidas, faça sua reserva ou venha nos fazer uma visita.</p>
 
-                <a href="#">Fale conosco</a>
+                <!-- <a href="#">Fale conosco</a> -->
             </div>
 
-            <div>
+            <div class="contato">
                 <ul>
                     <li>Telefone: (81) 9xxxx-xxxx</li>
                     <li>Email: contato@sabordosertao.com.br</li> 
@@ -88,13 +92,18 @@
                 </ul>
             </div>
 
-            <div>
+            <div id="localizacao">
                 <h4>Onde estamos</h4>
                 <p>Rua das Flores, 123</p>
                 <p>Boa Viagem, Recife - PE</p>
                 <p>CEP 51021-000</p>
 
-                <a href="#">Ver no mapa</a>
+                <a
+                    href="https://www.google.com/maps/search/?api=1&query=Boa+Viagem%2C+Recife%2C+PE"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    Ver no mapa
+                </a>
             </div>
         </section>
     </main>
