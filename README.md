@@ -1,4 +1,4 @@
-# Site Sabores de pernambuco
+# Site Sabor do Sertão
 
 ## Sobre
 Site Institucional focado em um restaurante que traz nos pratos a cultura pernambucana. O sistema tem como objetivo apresentar através do HTML e do CSS pratos tradicionais, a história e como entrar em contato com o restaurante, além de despertar o interesse pela gastronomia pernambucana.
