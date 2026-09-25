@@ -45,7 +45,7 @@ header{
     background-color: var(--cor-principal);
     border-bottom: solid 1px #eadfd8;
     padding: 20px 24px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 header a{
@@ -102,7 +102,6 @@ header ul li a:hover{
     color: var(--cor-principal);
     margin-top: 40px;
     padding: 20px 40px;
-    /* background-image: url("https://pixabay.com/get/g99858af618a5ba5f942f57e96a15204a71a8f1342877b7df65a1def75f25df06aa5bc60f640fd60510c4abe06f0b91af_1920.jpg?longlived="); */
     width: 100%;     
     height: 300px;     
     display: flex;
@@ -247,42 +246,44 @@ h4{
     display: flex;
     align-items: center;
     justify-content: center;
+}
 
-    .contato{
-        display: flex;
-        flex-direction: column;
-        max-width: 500px;
-        align-items: center;
-        text-align: center;
-    }
+.contato{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    align-items: center;
+    text-align: center;
+}
 
         
-    #contact ul{
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 8px;
-    }
-
-    .contato a{
-        display: inline-block;
-        margin-top: 15px;
-        padding: 8px 18px;
-        color:#F5F2EB;               
-        text-decoration: none;
-        transition: all 0.3s ease;
-        color: var(--cor-texto);
-        border: 1px solid var(--cor-texto);
-        border-radius: 20px;
-    }
-    .contato a:hover{
-        background-color: #F5F2EB;
-        color: #3d2514;
-    }    
+#contact ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
 }
+
+.contato a{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 18px;
+    color:#F5F2EB;               
+    text-decoration: none;
+    transition: all 0.3s ease;
+    color: var(--cor-texto);
+    border: 1px solid var(--cor-texto);
+    border-radius: 20px;
+}
+
+.contato a:hover{
+    background-color: #F5F2EB;
+    color: #3d2514;
+}    
+
 
 .duvidas p, h3, h4{
     margin: 2%;
