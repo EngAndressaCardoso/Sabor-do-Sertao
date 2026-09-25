@@ -270,18 +270,16 @@ h4{
 .contato a{
     display: inline-block;
     margin-top: 15px;
-    padding: 8px 18px;
-    color:#F5F2EB;               
+    padding: 8px 18px;             
     text-decoration: none;
     transition: all 0.3s ease;
-    color: var(--cor-texto);
-    border: 1px solid var(--cor-texto);
+    color: var(--cor-principal);
+    border: 1px solid var(--cor-principal);
     border-radius: 20px;
 }
 
 .contato a:hover{
-    background-color: #F5F2EB;
-    color: #3d2514;
+    background-color: var(--hover-principal);
 }    
 
 
