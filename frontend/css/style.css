@@ -1,0 +1,383 @@
+/* .....................VARIAVEL DE CORES..................... */
+:root{
+    --cor-principal: #F5F2EB;
+    --cor-texto: #6B3F22;
+    --hover-principal: #80583d;
+    --cor-secundaria: #362011;
+}
+
+/* .....................ESTILIZAÇÃO GERAL..................... */
+body{
+    margin: 0;
+    padding-top: 143px;
+    min-height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: var(--cor-principal);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    border-radius: 10px;
+}
+
+/* .....................CABEÇALHO..................... */
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    background-color: var(--cor-principal);
+    border-bottom: solid 1px #eadfd8;
+    padding: 20px 24px;
+    font-size: 25px;
+}
+
+header a{
+    color: var(--cor-texto);
+    padding: 5px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+header ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header li{
+    min-width: 0;
+}
+
+header a{
+    display: block;
+    margin: 0;
+    text-align: center;
+}
+
+header ul li a:hover{
+    background-color: var(--hover-principal);
+    border-radius: 20px;
+    color: var(--cor-principal);
+    padding: 5px;
+}
+
+/* .....................BANNER..................... */
+#introduction{
+    min-height: 30vh; 
+    /* background: linear-gradient(#4E2B16, #C77B3A); */
+
+  --s: 70px; 
+  --c1: #3d2514;
+  --c2: #362011;
+  
+  --_l: #0000 46%,var(--c1) 47% 53%,#0000 54%;
+  background:
+    radial-gradient(100% 100% at 100% 100%,var(--_l)) var(--s) var(--s),
+    radial-gradient(100% 100% at 0    0   ,var(--_l)) var(--s) var(--s),
+    radial-gradient(100% 100%,#0000 22%,var(--c1) 23% 29%, #0000 30% 34%,var(--c1) 35% 41%,#0000 42%),
+    var(--c2);
+  background-size: calc(var(--s)*2) calc(var(--s)*2);
+
+    color: var(--cor-principal);
+    margin-top: 40px;
+    padding: 20px 40px;
+    /* background-image: url("https://pixabay.com/get/g99858af618a5ba5f942f57e96a15204a71a8f1342877b7df65a1def75f25df06aa5bc60f640fd60510c4abe06f0b91af_1920.jpg?longlived="); */
+    width: 100%;     
+    height: 300px;     
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    justify-content: center;
+   
+}
+
+#introduction h1{
+    font-size: 40px;
+    margin-bottom: 12px;
+    margin-top: 0;
+}
+ #introduction h4{
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+#introduction p{
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+#introduction a{
+    color: var(--cor-principal);
+    border: 1px solid var(--cor-principal);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#introduction a:hover{
+    background-color: var(--cor-principal);
+    color: var(--cor-texto);
+}
+
+/* .....................SEÇÃO - SOBRE..................... */
+#about{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 20px 40px;
+    color: var(--cor-texto);
+    gap: 20px;
+    width: 100%;
+}
+.historia h4{
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.historia{
+    padding: 0;
+    margin: 0;
+    max-width: 610px;
+}
+
+.imagem-principal{
+    text-align: right;
+    justify-self: end;
+}
+
+.imagem-principal img{
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 0;
+    display: block;
+}
+
+/* .....................SEÇÃO - COMIDAS..................... */
+hr{
+    border-top: 1px solid var(--hover-principal);  
+    margin: 0 50px;
+}
+
+#our-foods{
+    background-color: var(--cor-principal);
+    padding-top: 20px;
+    text-align: center;
+    color: var(--cor-texto);
+    margin-bottom: 30px;
+}
+
+h2{
+    font-size: 32px;
+}
+h4{
+    font-size: 25px;
+}
+
+.food-card img {
+    margin: 0;
+    border-radius: 0;
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.food-card{
+    border-radius: 0;
+    overflow: hidden;
+}
+
+.food-card p, h5{
+    margin: 1%;
+    padding: 0%;
+}
+
+.refeicoes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    gap: 1px;
+    width: 100%;
+    justify-content: center;
+}
+
+/* .....................SEÇÃO - CONTATOS..................... */
+#contact{
+    padding: 20px;
+    min-height: 30vh; 
+    /* background: linear-gradient(#4E2B16, #C77B3A); */
+
+  --s: 70px; 
+  --c1: #3d2514;
+  --c2: #362011;
+  
+  --_l: #0000 46%,var(--c1) 47% 53%,#0000 54%;
+  background:
+    radial-gradient(100% 100% at 100% 100%,var(--_l)) var(--s) var(--s),
+    radial-gradient(100% 100% at 0    0   ,var(--_l)) var(--s) var(--s),
+    radial-gradient(100% 100%,#0000 22%,var(--c1) 23% 29%, #0000 30% 34%,var(--c1) 35% 41%,#0000 42%),
+    var(--c2);
+  background-size: calc(var(--s)*2) calc(var(--s)*2);
+    color: #F5F2EB;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .contato{
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        align-items: center;
+        text-align: center;
+    }
+
+        
+    #contact ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .contato a{
+        display: inline-block;
+        margin-top: 15px;
+        padding: 8px 18px;
+        color:#F5F2EB;               
+        text-decoration: none;
+        transition: all 0.3s ease;
+        color: var(--cor-texto);
+        border: 1px solid var(--cor-texto);
+        border-radius: 20px;
+    }
+    .contato a:hover{
+        background-color: #F5F2EB;
+        color: #3d2514;
+    }    
+}
+
+.duvidas p, h3, h4{
+    margin: 2%;
+    padding: 0%;
+}
+
+.duvidas a{
+    border: 0.5px solid var(--cor-principal);
+    border-radius: 20px;
+    color: var(--cor-principal);
+    padding: 10px;
+}
+
+h3{
+    font-size: 32px;
+}
+
+.duvidas a:hover{
+    background-color: var(--cor-principal);
+    border-radius: 20px;
+    color: var(--cor-texto);
+}
+
+/* .....................RODAPÉ..................... */
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--cor-texto);
+    padding: 20px 40px;
+    width: 100%;
+}
+
+footer p{
+    margin: 0;
+    text-align: right;
+}
+
+/* .....................RESPONSIVIDADE..................... */
+@media (min-width: 768px) {
+    body{
+        padding-top: 100px;
+    }
+
+    #introduction{
+        margin-top: 0;
+    }
+
+    header{
+        flex-direction: row;
+        align-items: center;
+        gap: 24px;
+    }
+
+    header nav{
+        width: auto;
+        margin-left: auto;
+    }
+
+    header nav ul{
+        grid-template-columns: repeat(4, 1fr);
+        width: auto;
+        margin-top: 0;
+        gap: 16px;
+    }
+
+    #about{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .refeicoes{
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    #contact{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .contato{
+        margin-top: 20px;
+        text-align: start;
+    }
+
+  footer{
+        column-gap: 670px;
+  }
+}
+
+@media (min-width: 1024px){
+    header nav ul{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .food-card{
+        flex-direction: row;
+    }
+}
